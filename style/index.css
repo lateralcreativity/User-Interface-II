@@ -28,15 +28,12 @@ html {
     height: 100vh;
 }
 
-body {
-    height: 100vh
-}
-
 h1, h2{
     margin: 1.5vh 0 1.5vh;
     font-size: 3vw;
 }
 
+/* Header styling */
 header {
     display: flex;
     flex-direction: column;
@@ -46,6 +43,7 @@ header {
     padding: 5vh;
 }
 
+/* Nav styling and animations */
 nav a {
     background-color: gray;
     padding: 1vh 3vh;
@@ -66,6 +64,7 @@ nav a:hover {
     color:black;
 }
 
+/* About styling */
 .about {
     display: flex;
     justify-content: center;
@@ -76,6 +75,7 @@ nav a:hover {
     width: 70%;
 }
 
+/* Main image styling */
 .mainImage {
     margin: 5vh 0;
 }
@@ -84,10 +84,10 @@ nav a:hover {
     width: 100%;
 }
 
+/* Gallery styling */
 .gallery {
     display: flex;
     justify-content: space-around;
-    width: 60%;
     padding-bottom: 10vh;
 }
 
@@ -95,16 +95,27 @@ nav a:hover {
     height: 100%;
 }
 
+.gallery ul {
+    align-self: center;
+    list-style-type: none;
+}
+
+.gallery ul li {
+    padding: 5vh 0;
+}
+
+/* Footer animations and styling */
 footer {
     display: flex;
     justify-content: center;
     background-color: darkgray;
     padding: 10vh 0;
+    box-shadow: 15px 15px 15px 15px black;
 }
 
 footer a {
     background-color: gray;
-    padding: 3vh 7vh;
+    padding: 2vh 2.5vw;
     color: white;
     box-shadow: 1.5px 1.5px black;
     text-decoration:none;
