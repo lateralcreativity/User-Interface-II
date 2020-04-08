@@ -1,1 +1,77 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+/* border: 0;   */
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+/* * {
+    border: 1px solid grey;
+} */
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh
+}
+
+h1, h2{
+    margin: 1.5vh 0 1.5vh;
+    font-size: 3vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+    padding: 5vh;
+}
+
+nav a {
+    background-color: gray;
+    padding: 1vh 3vh;
+    color: white;
+    box-shadow: 1.5px 1.5px black;
+    text-decoration:none;
+}
+
+@keyframes navAnimation {
+    from {background: grey;}
+    to {background:lightgray;}
+  }
+
+nav a:hover {
+    animation-name: navAnimation;
+    animation-duration: 0.3s;
+    background-color: lightgray;
+    color:black;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p {
+    width: 70%;
+}
