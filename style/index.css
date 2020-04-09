@@ -29,7 +29,7 @@ html {
 }
 
 h1, h2{
-    margin: 1.5vh 0 1.5vh;
+    margin: 1.5vh 0;
     font-size: 3vw;
 }
 
@@ -88,11 +88,14 @@ nav a:hover {
 .gallery {
     display: flex;
     justify-content: space-around;
+    align-items: stretch;
     padding-bottom: 10vh;
 }
 
 .gallery img {
-    height: 100%;
+    align-self: center;
+    height: 12%;
+    width:12%;
 }
 
 .gallery ul {
@@ -101,13 +104,14 @@ nav a:hover {
 }
 
 .gallery ul li {
+    font-size: 1.1em;
     padding: 5vh 0;
 }
 
 /* Footer animations and styling */
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: darkgray;
     padding: 10vh 0;
     box-shadow: 15px 15px 15px 15px black;
@@ -115,7 +119,7 @@ footer {
 
 footer a {
     background-color: gray;
-    padding: 2vh 2.5vw;
+    padding: 1.5vh 2vw;
     color: white;
     box-shadow: 1.5px 1.5px black;
     text-decoration:none;
