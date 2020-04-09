@@ -33,6 +33,16 @@ h1, h2{
     font-size: 3vw;
 }
 
+img {
+    animation-name: imgAnimation;
+    animation-duration: 5s;
+}
+
+@keyframes imgAnimation {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+
 /* Header styling */
 header {
     display: flex;
