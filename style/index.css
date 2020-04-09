@@ -20,6 +20,10 @@ font: inherit;
 vertical-align: baseline;  
 }
 
+/* *{
+    border: 2px solid blue;
+} */
+
 html {
     height: 100%;
     font-size: 62.5%;
@@ -109,11 +113,13 @@ nav a:hover {
 
 .gallery ul {
     list-style-type: none;
+    align-self: center;
+
 }
 
 .gallery ul li {
-    font-size: 1.5rem;
-    padding: 10% 0;
+    font-size: 1.6rem;
+    padding: 5% 0;
 }
 
 /* Footer animations and styling */
@@ -147,6 +153,26 @@ footer a:hover {
 }
 
 /*Media queries*/
+@media(max-width:1580px){
+    /* *{
+        border: 1px solid grey;
+    } */
+    .gallery{
+        flex-wrap: wrap;
+        padding-bottom: 8vh;
+    }
+    .gallery ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .gallery ul li{
+        padding: 3% 7%;
+    }
+    footer a {
+        font-size: 1.8rem;
+    }
+}
+
 @media(max-width:800px){
     /* *{
         border: 1px solid red;
