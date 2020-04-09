@@ -20,17 +20,18 @@ font: inherit;
 vertical-align: baseline;  
 }
 
-/* * {
-    border: 1px solid grey;
-} */
-
 html {
-    height: 100vh;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    font-size:1.6rem;
 }
 
 h1, h2{
-    margin: 1.5vh 0;
-    font-size: 3vw;
+    margin: 2.5% 0;
+    font-size: 5.5rem;
 }
 
 img {
@@ -49,14 +50,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3vh;
-    padding: 5vh;
+    padding: 3%;
 }
 
 /* Nav styling and animations */
 nav a {
     background-color: gray;
     padding: 1vh 3vh;
+    font-size: 2rem;
     color: white;
     box-shadow: 1.5px 1.5px black;
     text-decoration:none;
@@ -98,24 +99,21 @@ nav a:hover {
 .gallery {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
     padding-bottom: 10vh;
 }
 
 .gallery img {
     align-self: center;
-    height: 12%;
     width:12%;
 }
 
 .gallery ul {
-    align-self: center;
     list-style-type: none;
 }
 
 .gallery ul li {
-    font-size: 1.1em;
-    padding: 5vh 0;
+    font-size: 1.5rem;
+    padding: 10% 0;
 }
 
 /* Footer animations and styling */
@@ -123,7 +121,7 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: darkgray;
-    padding: 10vh 0;
+    padding: 2% 0;
     box-shadow: 15px 15px 15px 15px black;
 }
 
@@ -133,7 +131,7 @@ footer a {
     color: white;
     box-shadow: 1.5px 1.5px black;
     text-decoration:none;
-    font-size: 3vh;
+    font-size: 2rem;
 }
 
 @keyframes navAnimation {
@@ -146,4 +144,56 @@ footer a:hover {
     animation-duration: 0.3s;
     background-color: lightgray;
     color:black;
+}
+
+/*Media queries*/
+@media(max-width:800px){
+    /* *{
+        border: 1px solid red;
+    } */
+    nav a {
+        font-size: 1.5rem;
+    }
+    footer a {
+        font-size: 1.5rem;
+    }
+    .gallery{
+        flex-wrap: wrap;
+        padding-bottom: 5vh;
+    }
+    .gallery img{
+        align-self: flex-start;
+        width: 15%;
+        padding-bottom: 5%;
+    }
+    .gallery ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .gallery ul li{
+        padding: 3% 4%;
+    }
+}
+
+@media(max-width:500px){
+    /* *{
+        border: 1px solid blue;
+    } */
+    h1, h2{
+        margin: 2.5% 0;
+        font-size: 3rem;
+    }
+    nav a {
+        font-size: 1.2rem;
+        padding: 0.8vh 2vh;
+    }
+    footer a {
+        font-size: 1.5rem;
+    }
+    .about p{
+        font-size: 1.4rem;
+    }
+    .gallery ul li{
+        font-size: 1.4rem;
+    }
 }
